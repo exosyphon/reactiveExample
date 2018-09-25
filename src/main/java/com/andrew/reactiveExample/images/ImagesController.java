@@ -1,7 +1,5 @@
-package com.andrew.reactiveExample.home;
+package com.andrew.reactiveExample.images;
 
-import com.andrew.reactiveExample.images.Image;
-import com.andrew.reactiveExample.images.ImageService;
 import org.springframework.core.io.InputStreamResource;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
@@ -15,13 +13,13 @@ import reactor.core.publisher.Mono;
 import java.io.IOException;
 
 @Controller
-public class HomeController {
+public class ImagesController {
     private static final String BASE_PATH = "/images";
     private static final String FILENAME = "{filename:.+}";
 
     private final ImageService imageService;
 
-    public HomeController(ImageService imageService) {
+    public ImagesController(ImageService imageService) {
         this.imageService = imageService;
     }
 
