@@ -25,6 +25,7 @@ repositories {
 
 
 dependencies {
+	compileOnly 'org.projectlombok:lombok:1.18.2'
 	compile('org.springframework.boot:spring-boot-starter-data-mongodb')
 	compile('org.springframework.boot:spring-boot-starter-data-mongodb-reactive')
 	compile('org.springframework.boot:spring-boot-starter-thymeleaf')
